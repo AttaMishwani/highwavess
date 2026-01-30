@@ -20,6 +20,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { setLenis } from "./lenis";
+import ServicePackages from "./components/ServicePackages";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -67,6 +68,7 @@ function App() {
       <VisionMission />
       <ServicePreview />
       <Services />
+      <ServicePackages />
       <Portfolio />
       <TechStack />
       <Testimonials />
