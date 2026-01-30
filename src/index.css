@@ -1,0 +1,256 @@
+@import "tailwindcss";
+
+
+@theme {
+
+    --color-blue-main: #00BAF7;
+    --color-primary-bg: #0A0F1E;
+    --color-secondary-bg: #161B2E;
+    --color-card-bg: #131B2E;
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #B0B8C1;
+    --color-text-blue: #00C6FF;
+    --color-glowBlue: '0 0 20px 2px #00AEEF',
+}
+
+/* Dark Mode (Default) */
+:root.dark,
+:root {
+  --color-blue-main: #00BAF7;
+  --color-primary-bg: #0A0F1E;
+  --color-secondary-bg: #161B2E;
+  --color-card-bg: #131B2E;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #B0B8C1;
+  --color-text-blue: #00C6FF;
+}
+
+/* Light Mode */
+:root.light {
+  --color-blue-main: #0077BE;
+  --color-primary-bg: #F8F9FA;
+  --color-secondary-bg: #FFFFFF;
+  --color-card-bg: #FFFFFF;
+  --color-text-primary: #2E2E2E;
+  --color-text-secondary: #4A5568;
+  --color-text-blue: #0077BE;
+}
+
+.bg-site {
+  background:
+    radial-gradient(900px 500px at 20% 15%, rgba(0, 198, 255, 0.18), transparent 60%),
+    radial-gradient(800px 450px at 80% 25%, rgba(0, 174, 239, 0.14), transparent 60%),
+    linear-gradient(135deg, rgba(6, 18, 32, 1) 0%, rgba(8, 30, 55, 1) 45%, rgba(4, 10, 18, 1) 100%);
+  transition: background 0.3s ease;
+}
+
+:root.light .bg-site {
+  background:
+    radial-gradient(900px 500px at 20% 15%, rgba(0, 119, 190, 0.08), transparent 60%),
+    radial-gradient(800px 450px at 80% 25%, rgba(0, 174, 239, 0.06), transparent 60%),
+    linear-gradient(135deg, #F5F7FA 0%, #E8EDF2 45%, #FFFFFF 100%);
+}
+
+@layer components {
+  .universal-card {
+    @apply bg-[#0E1625b3]
+           border border-[#00AEEF26]
+           p-8
+           rounded-2xl
+           shadow-[0_10px_30px_-15px_rgba(0,174,239,0.35)]
+           hover:shadow-[0_15px_35px_-10px_rgba(0,174,239,0.45)]
+           transition-shadow duration-300;
+  }
+  
+  
+  .universal-card:hover {
+    @apply -translate-y-2
+           shadow-[0_25px_60px_-20px_rgba(0,198,255,0.35)]
+           border-[#00C6FF55];
+  }
+  
+    
+    :root.light .universal-card {
+      @apply bg-white border border-gray-200 shadow-[0_0_20px_-10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_30px_-8px_rgba(0,119,190,0.2)];
+    }
+
+    /* Theme-aware card styles */
+    .theme-card {
+      background-color: rgba(11, 18, 32, 0.8);
+      border-color: rgba(0, 198, 255, 0.1);
+      transition: all 0.5s ease;
+    }
+
+    :root.light .theme-card {
+      background-color: #FFFFFF;
+      border-color: #E5E7EB;
+    }
+  }
+  
+html,body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Light mode text colors */
+  :root.light {
+    color-scheme: light;
+  }
+
+  :root.light body {
+    background-color: var(--color-primary-bg);
+    color: var(--color-text-primary);
+  }
+
+  /* Light mode card backgrounds - using attribute selectors for reliability */
+  /* Light mode stats cards */
+  :root.light .bg-\[#0B1220\]\/60 {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-color: #E5E7EB !important;
+  }
+
+  :root.light [data-why-card] {
+    background-color: #FFFFFF !important;
+    border-color: #E5E7EB !important;
+  }
+
+  :root.light .testimonial-card {
+    background-color: #FFFFFF !important;
+    border-color: #E5E7EB !important;
+  }
+
+  :root.light .tech-card {
+    background-color: #FFFFFF !important;
+    border-color: #E5E7EB !important;
+  }
+
+  /* Target cards by their specific background class combinations */
+  :root.light div[class*="bg-[#0B1220]"] {
+    background-color: #FFFFFF !important;
+  }
+
+  :root.light div[class*="bg-[#0E1625]"] {
+    background-color: #FFFFFF !important;
+  }
+
+  :root.light div[class*="bg-[#0A2235]"] {
+    background-color: #FFFFFF !important;
+  }
+
+  /* Border fixes */
+  :root.light div[class*="border-[#00C6FF]"] {
+    border-color: #E5E7EB !important;
+  }
+
+  :root.light div[class*="border-[#00AEEF]"] {
+    border-color: #E5E7EB !important;
+  }
+
+  :root.light .bg-white\/5 {
+    background-color: rgba(0, 0, 0, 0.03) !important;
+  }
+
+  :root.light .border-white\/10,
+  :root.light .border-\[#00C6FF\]\/10,
+  :root.light .border-\[#00AEEF\]\/20,
+  :root.light .border-blue-main\/20 {
+    border-color: #E5E7EB !important;
+  }
+
+  :root.light .border-gray-200 {
+    border-color: #E5E7EB !important;
+  }
+
+  :root.light .text-white {
+    color: var(--color-text-primary) !important;
+  }
+
+  :root.light .text-gray-300,
+  :root.light .text-gray-400,
+  :root.light .text-gray-500 {
+    color: var(--color-text-secondary) !important;
+  }
+
+  :root.light .text-gray-200 {
+    color: var(--color-text-primary) !important;
+  }
+
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-marquee {
+    animation: marquee 15s linear infinite;
+  }
+  
+  .translate-101 {
+    transform: translateX(101%);
+  }
+
+  /* Pulse animation for background orbs */
+  @keyframes pulse-slow {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 6s ease-in-out infinite;
+  }
+
+  /* Gradient shift animation */
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animate-gradient-shift {
+    animation: gradient-shift 3s ease infinite;
+    background-size: 200% auto;
+  }
+
+  /* Grid move animation */
+  @keyframes grid-move {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(50px, 50px);
+    }
+  }
+
+  /* Float animation for particles */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) translateX(0);
+      opacity: 0.4;
+    }
+    50% {
+      transform: translateY(-20px) translateX(10px);
+      opacity: 1;
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  

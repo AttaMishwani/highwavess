@@ -1,0 +1,58 @@
+[vite] server connection lost. Polling for restart...
+react-dom_client.js:1  Failed to load resource: net::ERR_CONNECTION_RESETUnderstand this error
+framer-motion.js:1  Failed to load resource: net::ERR_CONNECTION_REFUSEDUnderstand this error
+logo.png:1  Failed to load resource: net::ERR_CONNECTION_REFUSEDUnderstand this error
+ogl.js:1  Failed to load resource: net::ERR_CONNECTION_REFUSEDUnderstand this error
+react-icons_hi.js:1  Failed to load resource: net::ERR_CONNECTION_REFUSEDUnderstand this error
+react_jsx-dev-runtime.js:1  Failed to load resource: net::ERR_CONNECTION_REFUSEDUnderstand this error
+lucide-react.js:1  Failed to load resource: net::ERR_CONNECTION_REFUSEDUnderstand this error
+react.js:1  Failed to load resource: net::ERR_CONNECTION_REFUSEDUnderstand this error
+react-bits.js:1  Failed to load resource: net::ERR_CONNECTION_REFUSED
+
+
+
+found 0 vulnerabilities
+PS F:\projectd\highwaves> npm run dev
+
+> highwaves@0.0.0 dev
+> vite
+
+
+  VITE v7.1.12  ready in 1348 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+X [ERROR] Could not resolve "react-native-web/dist/apis/StyleSheet/registry"
+
+    node_modules/react-bits/es/injection/injectors/inject-react-native-web.js:12:26:
+      12 │ import StyleRegistry from 'react-native-web/dist/apis/StyleSheet/registry';
+         ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  You can mark the path "react-native-web/dist/apis/StyleSheet/registry" as external to exclude it
+  from the bundle, which will remove this error and leave the unresolved path in the bundle.
+
+F:\projectd\highwaves\node_modules\esbuild\lib\main.js:1467
+  let error = new Error(text);
+              ^
+
+Error: Error during dependency optimization:
+
+X [ERROR] Could not resolve "react-native-web/dist/apis/StyleSheet/registry"
+
+    node_modules/react-bits/es/injection/injectors/inject-react-native-web.js:12:26:
+      12 │ ...yleRegistry from 'react-native-web/dist/apis/StyleSheet/registry';
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  You can mark the path "react-native-web/dist/apis/StyleSheet/registry" as external to exclude it from the bundle, which will remove this error and leave the unresolved path in the bundle.
+
+
+    at failureErrorWithLog (F:\projectd\highwaves\node_modules\esbuild\lib\main.js:1467:15)
+    at F:\projectd\highwaves\node_modules\esbuild\lib\main.js:926:25
+    at F:\projectd\highwaves\node_modules\esbuild\lib\main.js:1345:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  errors: [Getter/Setter],
+  warnings: [Getter/Setter]
+}
+
+Node.js v22.14.0
