@@ -4,13 +4,13 @@ import { Clock, DollarSign, CheckSquare } from "lucide-react";
 const ServicePackageCard = ({ pkg }) => {
   return (
     <div className="universal-card group relative p-6 flex flex-col justify-between overflow-hidden 
-                    bg-[#0E1625]/60 border border-[#00AEEF33] backdrop-blur-md rounded-3xl
+                    bg-[#0E1625]/60 border border-[#00BCF833] backdrop-blur-md rounded-3xl
                     shadow-lg hover:shadow-[0_25px_60px_-10px_rgba(0,198,255,0.4)]
                     transition-all duration-500 will-change-transform transform hover:-translate-y-2">
 
       {/* Gradient top bar */}
       <div className="absolute top-0 left-0 w-full h-1 rounded-t-3xl 
-                      bg-gradient-to-r from-[#00AEEF] to-[#00C6FF]"></div>
+                      bg-gradient-to-r from-[#00BCF8] to-[#00BCF8]"></div>
 
       {/* Content */}
       <div className="relative z-10">
@@ -37,7 +37,7 @@ const ServicePackageCard = ({ pkg }) => {
         </div>
 
         <button className="w-full py-3 rounded-lg font-semibold 
-                           bg-gradient-to-r from-[#00AEEF] to-[#00C6FF]
+                           bg-blue-main text-white hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(0,198,255,0.45)]
                            text-black hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(0,198,255,0.45)]
                            transition-all duration-300">
           Contact Us
@@ -48,3 +48,4 @@ const ServicePackageCard = ({ pkg }) => {
 };
 
 export default ServicePackageCard;
+

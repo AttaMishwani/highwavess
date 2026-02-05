@@ -71,7 +71,7 @@ const GlobalReach = () => {
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Header */}
         <div className="global-reach-header text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 bg-gradient-to-r from-[#00AEEF] to-[#00C6FF] bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 bg-gradient-to-r from-[#00BCF8] to-[#00BCF8] bg-clip-text text-transparent">
             Global Reach
           </h2>
           <p className="text-text-secondary max-w-3xl mx-auto text-lg">
@@ -113,7 +113,7 @@ const GlobalReach = () => {
               <span
                 className="
                   absolute left-1/2 -bottom-2 h-[2px] w-0
-                  bg-[#00C6FF]
+                  bg-[#00BCF8]
                   transition-all duration-300
                   group-hover:w-full
                   group-hover:left-0
@@ -128,3 +128,4 @@ const GlobalReach = () => {
 };
 
 export default GlobalReach;
+

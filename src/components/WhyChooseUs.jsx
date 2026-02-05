@@ -16,32 +16,32 @@ gsap.registerPlugin(ScrollTrigger);
 
 const points = [
     {
-      icon: <Rocket className="w-8 h-8 text-[#00C6FF]" />,
+      icon: <Rocket className="w-8 h-8 text-[#00BCF8]" />,
       title: "Innovation at Core",
       desc: "We bring creativity and innovation to every project, turning your ideas into impactful digital solutions.",
     },
     {
-      icon: <BarChart3 className="w-8 h-8 text-[#00C6FF]" />,
+      icon: <BarChart3 className="w-8 h-8 text-[#00BCF8]" />,
       title: "Data-Driven Results",
       desc: "Our strategies are backed by insights, analytics, and measurable outcomes to help you scale effectively.",
     },
     {
-      icon: <ShieldCheck className="w-8 h-8 text-[#00C6FF]" />,
+      icon: <ShieldCheck className="w-8 h-8 text-[#00BCF8]" />,
       title: "Reliability & Trust",
       desc: "We deliver on our promises — consistently, securely, and transparently.",
     },
     {
-      icon: <Users className="w-8 h-8 text-[#00C6FF]" />,
+      icon: <Users className="w-8 h-8 text-[#00BCF8]" />,
       title: "Experienced Team",
       desc: "Our team of developers, designers, and strategists work collaboratively to craft excellence.",
     },
     {
-      icon: <HeartHandshake className="w-8 h-8 text-[#00C6FF]" />,
+      icon: <HeartHandshake className="w-8 h-8 text-[#00BCF8]" />,
       title: "Client-First Approach",
       desc: "Your success is our priority — we focus on long-term relationships, not one-time projects.",
     },
     {
-      icon: <Globe2 className="w-8 h-8 text-[#00C6FF]" />,
+      icon: <Globe2 className="w-8 h-8 text-[#00BCF8]" />,
       title: "Global Reach",
       desc: "We work with clients across 10+ countries, empowering businesses worldwide.",
   },
@@ -105,13 +105,13 @@ const WhyChooseUs = () => {
       className="relative w-full py-24  text-text-primary"
     >
       {/* Decorative glowing backgrounds */}
-      {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-[#00AEEF]/20 blur-[120px] rounded-full"></div> */}
-      {/* <div className="absolute bottom-0 right-0 w-[250px] h-[250px] bg-[#00C6FF]/20 blur-[100px] rounded-full"></div> */}
+      {/* <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-[#00BCF8]/20 blur-[120px] rounded-full"></div> */}
+      {/* <div className="absolute bottom-0 right-0 w-[250px] h-[250px] bg-[#00BCF8]/20 blur-[100px] rounded-full"></div> */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
         {/* Section Title */}
         <div className="why-choose-us-header">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 leading-tight bg-gradient-to-r from-[#00AEEF] to-[#00C6FF] bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 leading-tight bg-gradient-to-r from-[#00BCF8] to-[#00BCF8] bg-clip-text text-transparent">
             Why Choose Us
           </h2>
           <p className="text-text-secondary text-base sm:text-lg max-w-2xl mx-auto mb-16">
@@ -138,3 +138,4 @@ const WhyChooseUs = () => {
 };
 
 export default WhyChooseUs;
+

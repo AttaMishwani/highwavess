@@ -86,7 +86,7 @@ const ServicePackages = () => {
       <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6">
         <div className="text-center mb-20">
           <h2 className="section-heading text-4xl md:text-5xl font-bold mb-4 
-                         bg-gradient-to-r from-[#00AEEF] to-[#00C6FF] bg-clip-text text-transparent">
+                         bg-gradient-to-r from-[#00BCF8] to-[#00BCF8] bg-clip-text text-transparent">
             High Waves – Service Packages
           </h2>
           <p className="section-subheading text-text-secondary max-w-2xl mx-auto text-lg">
@@ -110,3 +110,4 @@ const ServicePackages = () => {
 };
 
 export default ServicePackages;
+

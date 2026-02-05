@@ -58,19 +58,19 @@ const FounderSection = () => {
 
   const focusPoints = [
     {
-      icon: <Globe className="w-8 h-8 text-[#00AEEF]" />,
+      icon: <Globe className="w-8 h-8 text-blue-main" />,
       text: "Global reach with a local foundation in Pakistan",
     },
     {
-      icon: <Lightbulb className="w-8 h-8 text-[#00AEEF]" />,
+      icon: <Lightbulb className="w-8 h-8 text-blue-main" />,
       text: "Combining creativity, analytics, and technology",
     },
     {
-      icon: <Brain className="w-8 h-8 text-[#00AEEF]" />,
+      icon: <Brain className="w-8 h-8 text-blue-main" />,
       text: "Deep expertise in AI and automation",
     },
     {
-      icon: <Handshake className="w-8 h-8 text-[#00AEEF]" />,
+      icon: <Handshake className="w-8 h-8 text-blue-main" />,
       text: "Commitment to transparent, client-focused delivery",
     },
   ];
@@ -86,7 +86,7 @@ const FounderSection = () => {
       {/* Founder’s Message */}
       <div className="grid lg:grid-cols-2 gap-10 sm:gap-14 lg:gap-16 items-center fade-up">
         <div className="space-y-4 sm:space-y-6">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight bg-gradient-to-r from-[#00AEEF] to-[#00C6FF] bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight bg-gradient-to-r from-[#00BCF8] to-[#00BCF8] bg-clip-text text-transparent">
             Founder's Message
           </h2>
   
@@ -133,7 +133,7 @@ const FounderSection = () => {
         </div>
   
         {/* Quote Card */}
-        <div className="relative bg-[#0E1625]/70 backdrop-blur-xl border border-blue-main/20 rounded-2xl p-6 sm:p-8 md:p-10 shadow-[0_0_30px_-10px_#00AEEF40]">
+        <div className="relative bg-[#0E1625]/70 backdrop-blur-xl border border-blue-main/20 rounded-2xl p-6 sm:p-8 md:p-10 shadow-[0_0_30px_-10px_#00BCF840]">
           <p className="text-text-secondary italic leading-relaxed text-sm sm:text-base mb-6 sm:mb-8">
             “Our journey began with small dreams and bold ambitions — and today,
             High Waves stands as a symbol of creativity, trust, and innovation.
@@ -155,11 +155,11 @@ const FounderSection = () => {
       </div>
   
       {/* Divider Line */}
-      <div className="h-[2px] w-20 sm:w-24 bg-[#00AEEF] mx-auto my-12 sm:my-16 md:my-20 opacity-70 fade-up"></div>
+      <div className="h-[2px] w-20 sm:w-24 bg-[#00BCF8] mx-auto my-12 sm:my-16 md:my-20 opacity-70 fade-up"></div>
   
       {/* Company Overview */}
       <div className="text-center fade-up">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-[#00AEEF] to-[#00C6FF] bg-clip-text text-transparent">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-[#00BCF8] to-[#00BCF8] bg-clip-text text-transparent">
           Company Overview
         </h2>
   
@@ -185,11 +185,11 @@ const FounderSection = () => {
           {focusPoints.map((item, i) => (
             <div
               key={i}
-              className="group bg-[#0E1625]/70 border border-[#00AEEF]/20 p-6 sm:p-8 rounded-2xl shadow-[0_0_25px_-10px_#00AEEF30] hover:shadow-[0_0_35px_-6px_#00AEEF70] transition-all duration-500"
+              className="group bg-[#0E1625]/70 border border-[#00BCF8]/20 p-6 sm:p-8 rounded-2xl shadow-[0_0_25px_-10px_#00BCF830] hover:shadow-[0_0_35px_-6px_#00BCF870] transition-all duration-500"
               style={{ willChange: 'transform' }}
             >
               <div className="flex flex-col items-center text-center space-y-3 sm:space-y-4">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center rounded-2xl bg-gradient-to-br from-[#00AEEF]/10 to-[#00C6FF]/10">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center rounded-2xl bg-gradient-to-br from-[#00BCF8]/10 to-[#00BCF8]/10">
                   {item.icon}
                 </div>
                 <p className="text-text-primary text-sm sm:text-lg leading-relaxed">
@@ -212,3 +212,4 @@ const FounderSection = () => {
 };
 
 export default FounderSection;
+

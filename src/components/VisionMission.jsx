@@ -131,7 +131,7 @@ const VisionMission = () => {
   >
     {/* Section Header */}
     <div className="vision-mission-header text-center mb-10 sm:mb-14 max-w-3xl px-2">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 leading-tight bg-gradient-to-r from-[#00AEEF] to-[#00C6FF] bg-clip-text text-transparent">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 leading-tight bg-gradient-to-r from-[#00BCF8] to-[#00BCF8] bg-clip-text text-transparent">
         Vision, Mission & Core Values
       </h2>
       <p className="text-text-secondary text-sm sm:text-base">
@@ -203,3 +203,4 @@ const VisionMission = () => {
 };
 
 export default VisionMission;
+

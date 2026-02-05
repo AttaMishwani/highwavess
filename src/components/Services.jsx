@@ -12,40 +12,40 @@ const Services = () => {
   const services = useMemo(
     () => [
       {
-        icon: <Globe className="w-8 h-8 text-[#00C6FF]" />,
+        icon: <Globe className="w-8 h-8 text-[#00BCF8]" />,
         title: "Website Design & Development",
         description:
           "We build dynamic, responsive websites tailored to your goals, from corporate portals to e-commerce and custom-coded web apps.",
         tech: "Technologies: HTML, CSS, React, Node.js, WordPress, Wix, Shopify, Laravel",
       },
       {
-        icon: <Bot className="w-8 h-8 text-[#00C6FF]" />,
+        icon: <Bot className="w-8 h-8 text-[#00BCF8]" />,
         title: "Chatbot & AI Assistant Development",
         description:
           "We build conversational AI systems, integrating GPT-based chatbots and voice assistants into websites and CRM platforms.",
         tech: "Use Cases: Customer Support, Lead Generation, Automation",
       },
       {
-        icon: <Settings className="w-8 h-8 text-[#00C6FF]" />,
+        icon: <Settings className="w-8 h-8 text-[#00BCF8]" />,
         title: "Business Automation & Data Entry Systems",
         description:
           "We streamline manual workflows through bots, scripts, and AI-powered automation that save time and reduce errors.",
         tech: "Examples: Auto report generation, CRM integration, Excel automation",
       },
       {
-        icon: <Code2 className="w-8 h-8 text-[#00C6FF]" />,
+        icon: <Code2 className="w-8 h-8 text-[#00BCF8]" />,
         title: "Python Scripting & Web Scraping",
         description:
           "We create efficient scripts for data extraction, analytics, and web automation that support real-time business intelligence.",
       },
       {
-        icon: <Lightbulb className="w-8 h-8 text-[#00C6FF]" />,
+        icon: <Lightbulb className="w-8 h-8 text-[#00BCF8]" />,
         title: "Creative Branding & Visual Design",
         description:
           "We design brand identities that stand out, including logos, brochures, presentations, and digital creatives.",
       },
       {
-        icon: <Smartphone className="w-8 h-8 text-[#00C6FF]" />,
+        icon: <Smartphone className="w-8 h-8 text-[#00BCF8]" />,
         title: "Mobile App & Software Development",
         description:
           "We develop high-performance mobile and desktop apps that deliver smooth experiences for end-users.",
@@ -111,7 +111,7 @@ const Services = () => {
     >
       {/* Header */}
       <div className="services-header text-center max-w-2xl mb-10 px-4">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 leading-tight bg-gradient-to-r from-[#00AEEF] to-[#00C6FF] bg-clip-text text-transparent">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 leading-tight bg-gradient-to-r from-[#00BCF8] to-[#00BCF8] bg-clip-text text-transparent">
           Our Services
         </h2>
         <p className="text-text-secondary text-base sm:text-lg">
@@ -136,3 +136,4 @@ const Services = () => {
 };
 
 export default Services;
+

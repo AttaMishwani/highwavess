@@ -93,7 +93,7 @@ const Navbar = () => {
 
       <nav
         ref={navRef}
-        className="w-[90%] max-w-[1200px] shadow-[0_5px_20px_-22px_#00AEEF] bg-secondary-bg rounded-4xl px-6 sm:px-8 py-2 flex justify-between items-center relative z-10"
+        className="w-[90%] max-w-[1200px] shadow-[0_5px_20px_-22px_#00BCF8] bg-secondary-bg rounded-4xl px-6 sm:px-8 py-2 flex justify-between items-center relative z-10"
       >
         {/* Logo */}
         <a href="#home" className="logo flex items-center">
@@ -194,3 +194,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

@@ -57,7 +57,7 @@ const FloatingContact = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-3 w-full px-3 py-3 rounded-xl hover:bg-white/10 dark:hover:bg-white/10 transition text-text-primary"
           >
-            <MessageCircle size={18} className="text-[#00C6FF]" />
+            <MessageCircle size={18} className="text-[#00BCF8]" />
             <div className="min-w-0">
               <div className="text-sm font-medium">WhatsApp</div>
               <div className="text-xs text-text-secondary">{phoneDisplay}</div>
@@ -68,7 +68,7 @@ const FloatingContact = () => {
             href={`tel:${phoneIntl}`}
             className="flex items-center gap-3 w-full px-3 py-3 rounded-xl hover:bg-white/10 dark:hover:bg-white/10 transition text-text-primary"
           >
-            <Phone size={18} className="text-[#00C6FF]" />
+            <Phone size={18} className="text-[#00BCF8]" />
             <div className="min-w-0">
               <div className="text-sm font-medium">Call</div>
               <div className="text-xs text-text-secondary">{phoneDisplay}</div>
@@ -79,7 +79,7 @@ const FloatingContact = () => {
             href={`mailto:${email}`}
             className="flex items-center gap-3 w-full px-3 py-3 rounded-xl hover:bg-white/10 dark:hover:bg-white/10 transition text-text-primary"
           >
-            <Mail size={18} className="text-[#00C6FF]" />
+            <Mail size={18} className="text-[#00BCF8]" />
             <div className="min-w-0">
               <div className="text-sm font-medium">Email</div>
               <div className="text-xs text-text-secondary break-all">{email}</div>
@@ -92,7 +92,7 @@ const FloatingContact = () => {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="h-14 w-14 rounded-2xl bg-[#00C6FF] text-[#F7F7F7] shadow-lg hover:scale-105 transition flex items-center justify-center"
+        className="h-14 w-14 rounded-2xl bg-[#00BCF8] text-[#F7F7F7] shadow-lg hover:scale-105 transition flex items-center justify-center"
         aria-label="Open contact menu"
       >
         <MessageCircle size={22} />
@@ -102,3 +102,4 @@ const FloatingContact = () => {
 };
 
 export default FloatingContact;
+

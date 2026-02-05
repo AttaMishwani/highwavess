@@ -87,7 +87,7 @@ const Testimonials = () => {
     >
       {/* Heading */}
       <div className="testimonials-header text-center mb-14">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 leading-tight bg-gradient-to-r from-[#00AEEF] to-[#00C6FF] bg-clip-text text-transparent">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 leading-tight bg-gradient-to-r from-[#00BCF8] to-[#00BCF8] bg-clip-text text-transparent">
           Client Testimonials
         </h2>
 
@@ -101,7 +101,7 @@ const Testimonials = () => {
         {testimonials.map((item, index) => (
           <div
             key={index}
-            className="testimonial-card relative bg-[#0B1220]/80 backdrop-blur-md p-6 flex flex-col justify-between rounded-2xl shadow-[0_0_25px_-8px_#00C6FF]/10 hover:shadow-[0_0_40px_-8px_#00C6FF]/30 transition-all duration-500 border border-[#00C6FF]/10 max-w-md"
+            className="testimonial-card relative bg-[#0B1220]/80 backdrop-blur-md p-6 flex flex-col justify-between rounded-2xl shadow-[0_0_25px_-8px_#00BCF8]/10 hover:shadow-[0_0_40px_-8px_#00BCF8]/30 transition-all duration-500 border border-[#00BCF8]/10 max-w-md"
             style={{ willChange: 'transform, opacity' }}
           >
             <p className="text-text-secondary mb-6 italic leading-relaxed">
@@ -132,3 +132,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+

@@ -1,50 +1,40 @@
 import React, { useEffect, useRef } from "react";
-import { ExternalLink } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import portfolio from "../assets/portfolio/portfolio.webp"
-import portfolio2 from "../assets/portfolio/portfolio2.webp"
-import portfolio3 from "../assets/portfolio/portfolio3.webp"
-import portfolio4 from "../assets/portfolio/portfolio4.webp"
+import psa from "../assets/portfolio/psa.webp";
+import digitora from "../assets/portfolio/digitora.webp";
+import kcpremierliving from "../assets/portfolio/kcpremier.webp";
 import PortfolioCard from "./cards/PortfolioCard";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    name: "Syeed & Sons",
-    industry: "Textile Export & Manufacturing",
-    image: portfolio,
-    link: "https://syeedandsons.com",
-  },
-  {
-    name: "Pak Safety Academy",
+    name: "Pak Safety Academy", 
     industry: "Occupational Safety & Industrial Training",
-    image: portfolio2,
+    image: psa,
     link: "https://paksafetyacademy.com",
   },
   {
     name: "Any Landscaping",
     industry: "Landscape Design & Maintenance",
-    image: portfolio3,
+    image: psa,
     link: "https://anylandscaping.com",
   },
   {
     name: "Digitora",
     industry: "Digital Marketing & Branding Agency",
-    image: portfolio4,
+    image: digitora,
     link: "https://digitora.site",
   },
   {
     name: "KC Premier Living",
     industry: "Real Estate & Property Management",
-    image: portfolio,
+    image: kcpremierliving,
     link: "https://kcpremierliving.com",
   },
   {
     name: "Finance Centre",
     industry: "Financial Consultancy & Services",
-    image: portfolio2,
+    image: digitora,
     link: "https://financecentre.us",
   },
 ];
@@ -54,22 +44,25 @@ const Portfolio = () => {
 
   useEffect(() => {
     if (!sectionRef.current) return;
+    gsap.registerPlugin(ScrollTrigger);
+
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReduced) return;
 
     const ctx = gsap.context(() => {
-      // Animate header
-      const header = sectionRef.current.querySelector(".portfolio-header");
-      if (header) {
+      const headingItems = sectionRef.current.querySelectorAll("[data-portfolio-heading]");
+      if (headingItems.length) {
         gsap.fromTo(
-          header.children,
-          { opacity: 0, y: 30 },
+          headingItems,
+          { autoAlpha: 0, y: 24 },
           {
-            opacity: 1,
+            autoAlpha: 1,
             y: 0,
-            duration: 0.8,
-            stagger: 0.15,
-            ease: "power3.out",
+            duration: 0.7,
+            stagger: 0.12,
+            ease: "power2.out",
             scrollTrigger: {
-              trigger: header,
+              trigger: sectionRef.current,
               start: "top 85%",
               once: true,
             },
@@ -78,26 +71,27 @@ const Portfolio = () => {
       }
 
       const cards = gsap.utils.toArray(".portfolio-card", sectionRef.current);
-
       if (!cards.length) return;
 
-      gsap.fromTo(
-        cards,
-        { opacity: 0, y: 20 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.6,
-          stagger: 0.08,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 70%",
-            once: true,
-          },
-        }
-      );
-      
+      ScrollTrigger.batch(cards, {
+        start: "top 85%",
+        once: true,
+        onEnter: (batch) => {
+          gsap.fromTo(
+            batch,
+            { opacity: 0, y: 18 },
+            {
+              opacity: 1,
+              y: 0,
+              duration: 0.55,
+              stagger: 0.08,
+              ease: "power2.out",
+              overwrite: true,
+              clearProps: "transform",
+            }
+          );
+        },
+      });
     }, sectionRef);
 
     return () => ctx.revert();
@@ -110,19 +104,22 @@ const Portfolio = () => {
       className="relative w-full py-24 px-4 sm:px-6 lg:px-20 text-text-primary"
     >
       {/* Header */}
-      <div className="portfolio-header text-center mb-14">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 leading-tight bg-gradient-to-r from-[#00AEEF] to-[#00C6FF] bg-clip-text text-transparent">
+      <div className="portfolio-header text-center mb-12">
+        <h2
+          data-portfolio-heading
+          className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 leading-tight bg-gradient-to-r from-[#00BCF8] to-[#00BCF8] bg-clip-text text-transparent"
+        >
           Portfolio Showcase
         </h2>
-              <p className="text-text-secondary max-w-2xl mx-auto text-lg">
+        <p data-portfolio-heading className="text-text-secondary max-w-2xl mx-auto text-lg">
           Selected projects delivered with strategy, performance, and precision.
         </p>
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1200px] w-full mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl w-full mx-auto">
         {projects.map((proj, index) => (
-        <PortfolioCard key={index} project={proj} />
+          <PortfolioCard key={index} project={proj} />
         ))}
       </div>
     </section>
@@ -130,3 +127,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+

@@ -84,13 +84,13 @@ const ServicePreview = () => {
   return (
     <section ref={sectionRef} className="relative py-24 px-6 sm:px-12 lg:px-20 font-[Poppins] text-text-primary ">
       {/* soft glow */}
-      {/* <div className="absolute -top-16 -left-16 w-80 h-80 bg-[#00AEEF]/15 blur-[130px] rounded-full" /> */}
-      {/* <div className="absolute -bottom-16 -right-16 w-80 h-80 bg-[#00C6FF]/10 blur-[130px] rounded-full" /> */}
+      {/* <div className="absolute -top-16 -left-16 w-80 h-80 bg-[#00BCF8]/15 blur-[130px] rounded-full" /> */}
+      {/* <div className="absolute -bottom-16 -right-16 w-80 h-80 bg-[#00BCF8]/10 blur-[130px] rounded-full" /> */}
 
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* header */}
         <div className="service-preview-header text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 bg-gradient-to-r from-[#00AEEF] to-[#00C6FF] bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 bg-gradient-to-r from-[#00BCF8] to-[#00BCF8] bg-clip-text text-transparent">
             Services
           </h2>
           <p className="text-text-secondary max-w-3xl mx-auto text-lg">
@@ -109,8 +109,8 @@ const ServicePreview = () => {
                 className="rounded-2xl border border-white/10 dark:border-white/10 border-gray-200 bg-white/5 dark:bg-white/5 bg-gray-50/80 backdrop-blur-md p-6 hover:bg-white/10 dark:hover:bg-white/10 hover:bg-gray-100/80 hover:border-white/20 dark:hover:border-white/20 hover:border-gray-300 transition"
                 style={{ willChange: 'transform, opacity' }}
               >
-                <div className="w-12 h-12 rounded-xl bg-[#00C6FF]/15 border border-[#00C6FF]/25 flex items-center justify-center mb-4">
-                  <Icon size={22} className="text-[#00C6FF]" />
+                <div className="w-12 h-12 rounded-xl bg-[#00BCF8]/15 border border-[#00BCF8]/25 flex items-center justify-center mb-4">
+                  <Icon size={22} className="text-[#00BCF8]" />
                 </div>
 
                 <h3 className="text-lg font-semibold mb-2">{s.title}</h3>
@@ -125,3 +125,4 @@ const ServicePreview = () => {
 };
 
 export default ServicePreview;
+

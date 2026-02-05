@@ -199,13 +199,13 @@ const Home = () => {
 
       {/* Supporting Orbs (keep them inside Home only) */}
       <div className="absolute inset-0 pointer-events-none z-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#00AEEF]/16 rounded-full blur-[120px] animate-pulse-slow" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#00BCF8]/16 rounded-full blur-[120px] animate-pulse-slow" />
         <div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#00C6FF]/14 rounded-full blur-[120px] animate-pulse-slow"
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#00BCF8]/14 rounded-full blur-[120px] animate-pulse-slow"
           style={{ animationDelay: "1s" }}
         />
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[560px] h-[560px] bg-[#00AEEF]/10 rounded-full blur-[150px] animate-pulse-slow"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[560px] h-[560px] bg-[#00BCF8]/10 rounded-full blur-[150px] animate-pulse-slow"
           style={{ animationDelay: "2s" }}
         />
       </div>
@@ -215,7 +215,7 @@ const Home = () => {
         {particles.map((p) => (
           <div
             key={p.id}
-            className="absolute w-1 h-1 bg-[#00C6FF]/40 rounded-full animate-float"
+            className="absolute w-1 h-1 bg-[#00BCF8]/40 rounded-full animate-float"
             style={{
               left: p.left,
               top: p.top,
@@ -231,15 +231,15 @@ const Home = () => {
         ref={floatingElementsRef}
         className="absolute inset-0 pointer-events-none overflow-hidden z-20"
       >
-        <Sparkles className="absolute top-20 left-10 w-14 h-14 text-[#00C6FF]/40 animate-pulse" />
-        <Rocket className="absolute top-40 right-20 w-12 h-12 text-[#00AEEF]/40" />
-        <Code2 className="absolute bottom-40 left-20 w-14 h-14 text-[#00C6FF]/40" />
-        <Globe className="absolute bottom-20 right-40 w-12 h-12 text-[#00AEEF]/40" />
-        <Zap className="absolute top-1/2 left-5 w-10 h-10 text-[#00C6FF]/30" />
-        <Sparkles className="absolute bottom-1/4 right-10 w-12 h-12 text-[#00AEEF]/30 animate-pulse" />
-        <Star className="absolute top-1/3 right-1/4 w-10 h-10 text-[#00C6FF]/30" />
-        <TrendingUp className="absolute bottom-1/3 left-1/3 w-10 h-10 text-[#00AEEF]/30" />
-        <Award className="absolute top-2/3 right-1/3 w-10 h-10 text-[#00C6FF]/30" />
+        <Sparkles className="absolute top-20 left-10 w-14 h-14 text-[#00BCF8]/40 animate-pulse" />
+        <Rocket className="absolute top-40 right-20 w-12 h-12 text-[#00BCF8]/40" />
+        <Code2 className="absolute bottom-40 left-20 w-14 h-14 text-[#00BCF8]/40" />
+        <Globe className="absolute bottom-20 right-40 w-12 h-12 text-[#00BCF8]/40" />
+        <Zap className="absolute top-1/2 left-5 w-10 h-10 text-[#00BCF8]/30" />
+        <Sparkles className="absolute bottom-1/4 right-10 w-12 h-12 text-[#00BCF8]/30 animate-pulse" />
+        <Star className="absolute top-1/3 right-1/4 w-10 h-10 text-[#00BCF8]/30" />
+        <TrendingUp className="absolute bottom-1/3 left-1/3 w-10 h-10 text-[#00BCF8]/30" />
+        <Award className="absolute top-2/3 right-1/3 w-10 h-10 text-[#00BCF8]/30" />
       </div>
 
       {/* Hero Content */}
@@ -260,8 +260,8 @@ const Home = () => {
           md:py-24
         "
       >
-        <div className="mb-8 px-6 py-3 rounded-full bg-gradient-to-r from-[#00AEEF]/30 to-[#00C6FF]/30 border border-[#00C6FF]/40 backdrop-blur-md shadow-[0_0_30px_rgba(0,198,255,0.3)] hover:shadow-[0_0_40px_rgba(0,198,255,0.5)] transition-all duration-300 hover:scale-105">
-          <p className="text-sm md:text-base font-semibold bg-gradient-to-r from-[#00AEEF] to-[#00C6FF] bg-clip-text text-transparent flex items-center gap-2">
+        <div className="mb-8 px-6 py-3 rounded-full bg-gradient-to-r from-[#00BCF8]/30 to-[#00BCF8]/30 border border-[#00BCF8]/40 backdrop-blur-md shadow-[0_0_30px_rgba(0,198,255,0.3)] hover:shadow-[0_0_40px_rgba(0,198,255,0.5)] transition-all duration-300 hover:scale-105">
+          <p className="text-sm md:text-base font-semibold bg-gradient-to-r from-[#00BCF8] to-[#00BCF8] bg-clip-text text-transparent flex items-center gap-2">
             <Sparkles className="w-4 h-4 inline-block animate-pulse" />
             Transforming Ideas Into Digital Excellence
             <Sparkles className="w-4 h-4 inline-block animate-pulse" />
@@ -275,7 +275,7 @@ const Home = () => {
             leading-tight
             mb-8
             text-[clamp(2rem,5vw,4.5rem)]
-            bg-gradient-to-r from-[#00AEEF] via-[#00C6FF] to-[#00AEEF]
+            bg-gradient-to-r from-[#00BCF8] via-[#00BCF8] to-[#00BCF8]
             bg-clip-text text-transparent
             bg-[length:200%_auto]
             animate-gradient-shift
@@ -298,7 +298,7 @@ const Home = () => {
           "
         >
           At{" "}
-          <span className="font-bold bg-gradient-to-r from-[#00AEEF] to-[#00C6FF] bg-clip-text text-transparent">
+          <span className="font-bold bg-gradient-to-r from-[#00BCF8] to-[#00BCF8] bg-clip-text text-transparent">
             High Waves Software Solutions
           </span>
           , we build intelligent websites, apps, and AI solutions that help businesses
@@ -321,13 +321,14 @@ const Home = () => {
           <button
             onClick={() => scrollTo("#contact")}
             className="
+              hero-cta
               relative overflow-hidden
               bg-blue-main
               text-text-primary
               px-6 py-3
               rounded-xl
               font-medium
-              shadow-[0_0_15px_#007BFF]
+              shadow-[0_0_15px_#00BCF8]
               transition-all duration-300
               w-full sm:w-auto
               cursor-pointer
@@ -356,6 +357,7 @@ const Home = () => {
           <button
             onClick={() => scrollTo("#portfolio")}
             className="
+              hero-portfolio
               relative
               border border-white/60
               text-text-primary
@@ -366,15 +368,15 @@ const Home = () => {
               w-full sm:w-auto
               cursor-pointer
               text-[clamp(0.9rem,1.8vw,1rem)]
-              hover:text-[#00AEEF]
-              hover:border-[#00AEEF]
+              hover:text-[#00BCF8]
+              hover:border-[#00BCF8]
             "
           >
             <span
               className="
                 absolute left-1/2 -bottom-[2px]
                 h-[2px] w-0
-                bg-[#00AEEF]
+                bg-[#00BCF8]
                 transition-all duration-300
                 hover:w-full
                 hover:left-0
@@ -389,3 +391,4 @@ const Home = () => {
 };
 
 export default Home;
+

@@ -18,42 +18,42 @@ const techStack = [
   {
     category: "Languages",
     tools: "Python, JavaScript, HTML, CSS, PHP",
-    icon: <Code2 className="w-8 h-8 text-[#00C6FF]" />,
+    icon: <Code2 className="w-8 h-8 text-[#00BCF8]" />,
   },
   {
     category: "Frameworks",
     tools: "React, Node.js, Express.js, Flask, Django",
-    icon: <Layers className="w-8 h-8 text-[#00C6FF]" />,
+    icon: <Layers className="w-8 h-8 text-[#00BCF8]" />,
   },
   {
     category: "Platforms",
     tools: "WordPress, Wix, Shopify, Squarespace",
-    icon: <Boxes className="w-8 h-8 text-[#00C6FF]" />,
+    icon: <Boxes className="w-8 h-8 text-[#00BCF8]" />,
   },
   {
     category: "AI & NLP",
     tools: "OpenAI GPT Models, LangChain, Chatbot APIs",
-    icon: <Brain className="w-8 h-8 text-[#00C6FF]" />,
+    icon: <Brain className="w-8 h-8 text-[#00BCF8]" />,
   },
   {
     category: "Databases",
     tools: "MySQL, MongoDB, Firebase",
-    icon: <Database className="w-8 h-8 text-[#00C6FF]" />,
+    icon: <Database className="w-8 h-8 text-[#00BCF8]" />,
   },
   {
     category: "Design Tools",
     tools: "Figma, Adobe XD, Illustrator",
-    icon: <Brush className="w-8 h-8 text-[#00C6FF]" />,
+    icon: <Brush className="w-8 h-8 text-[#00BCF8]" />,
   },
   {
     category: "Version Control",
     tools: "Git, GitHub",
-    icon: <GitBranch className="w-8 h-8 text-[#00C6FF]" />,
+    icon: <GitBranch className="w-8 h-8 text-[#00BCF8]" />,
   },
   {
     category: "Hosting & Cloud",
     tools: "AWS, DigitalOcean, Cloudflare",
-    icon: <Cloud className="w-8 h-8 text-[#00C6FF]" />,
+    icon: <Cloud className="w-8 h-8 text-[#00BCF8]" />,
   },
 ];
 
@@ -116,11 +116,11 @@ const TechStack = () => {
       id="tech-stack"
       className="relative py-24 px-6 md:px-12 lg:px-20 text-text-primary"
     >
-      {/* <div className="absolute top-0 left-0 w-64 h-64 bg-[#00AEEF]/20 blur-[100px] rounded-full"></div> */}
-      {/* <div className="absolute bottom-10 right-10 w-72 h-72 bg-[#00C6FF]/20 blur-[120px] rounded-full"></div> */}
+      {/* <div className="absolute top-0 left-0 w-64 h-64 bg-[#00BCF8]/20 blur-[100px] rounded-full"></div> */}
+      {/* <div className="absolute bottom-10 right-10 w-72 h-72 bg-[#00BCF8]/20 blur-[120px] rounded-full"></div> */}
 
       <div className="tech-stack-header relative z-10 text-center mb-16">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 leading-tight bg-gradient-to-r from-[#00AEEF] to-[#00C6FF] bg-clip-text text-transparent">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 leading-tight bg-gradient-to-r from-[#00BCF8] to-[#00BCF8] bg-clip-text text-transparent">
           Technology Stack
         </h2>
         <p className="text-text-secondary max-w-2xl mx-auto text-lg">
@@ -132,11 +132,11 @@ const TechStack = () => {
         {techStack.map((item, index) => (
           <div
             key={index}
-            className="tech-card bg-[#0B1220]/70 border border-[#00C6FF]/20 p-6 rounded-2xl shadow-lg"
+            className="tech-card bg-[#0B1220]/70 border border-[#00BCF8]/20 p-6 rounded-2xl shadow-lg"
             style={{ willChange: 'transform, opacity' }}
           >
             <div className="flex justify-center mb-4">{item.icon}</div>
-            <h3 className="text-xl font-semibold text-center text-[#00C6FF] mb-2">
+            <h3 className="text-xl font-semibold text-center text-[#00BCF8] mb-2">
               {item.category}
             </h3>
             <p className="text-text-secondary text-sm text-center">{item.tools}</p>
@@ -148,3 +148,4 @@ const TechStack = () => {
 };
 
 export default TechStack;
+
